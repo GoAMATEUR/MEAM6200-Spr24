@@ -106,7 +106,6 @@ class SE3Control(object):
             [-self.arm_length, 0, self.arm_length, 0],
             [self.gamma, -self.gamma, self.gamma, -self.gamma]
         ])) @ np.concatenate((u_1, u_2), axis=0)
-        # F = np.linalg.inv(self.linear_Eq) @ u
         motor_forces[motor_forces < 0] = 0
         cmd_moment = u_2
         motor_forces[motor_forces< 0] = 0
