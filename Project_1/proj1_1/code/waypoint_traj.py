@@ -20,7 +20,7 @@ class WaypointTraj(object):
         """
         self._points = points
         self._N = self._points.shape[0]
-        self._speed = 1.0
+        self._speed = 2.29
         self._seg_times = None
         self._seg_speeds = None
         self._poly_coeffs = None

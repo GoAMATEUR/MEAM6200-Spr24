@@ -36,10 +36,10 @@ class SE3Control(object):
         self.g = 9.81 # m/s^2
 
         # STUDENT CODE HERE
-        self.k_p = 8 * np.eye(3)
+        self.k_p = 8.5 * np.eye(3)
         self.k_d = 5 * np.eye(3)
-        self.k_r = 235 * np.eye(3)
-        self.k_w = 15 * np.eye(3)
+        self.k_r = 125 * np.eye(3)
+        self.k_w = 13 * np.eye(3)
         
         self.gamma = self.k_drag / self.k_thrust
 
